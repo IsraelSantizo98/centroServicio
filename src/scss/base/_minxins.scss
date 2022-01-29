@@ -1,0 +1,21 @@
+@use 'base/variable' as v;
+@media phone {
+    @media (min-width: v.$phone){
+        @content;
+    }
+}
+@media tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+@media desktop {
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+@media desktopXL {
+    @media (min-width: v.$desktopXL){
+        @content;
+    }
+}
