@@ -1,0 +1,36 @@
+{
+  "name": "centroservicio",
+  "version": "1.0.0",
+  "description": "Control y gestión de dispositivos electrónicos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IsraelSantizo98/centroServicio.git"
+  },
+  "keywords": [
+    "GULP",
+    "SASS",
+    "HTML",
+    "y",
+    "JS"
+  ],
+  "author": "Israel Santizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsraelSantizo98/centroServicio/issues"
+  },
+  "homepage": "https://github.com/IsraelSantizo98/centroServicio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.49.0"
+  }
+}
