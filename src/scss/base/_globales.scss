@@ -17,9 +17,10 @@ h1{
 }
 h2{
     font-size: 3.6rem;
+    margin: 1rem 0;
 }
 h3{
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 img{
     max-width: 100%;
@@ -59,4 +60,17 @@ body{
 }
 .border-top{
     border-top: 1rem solid v.$negro;
+}
+.border-cards{
+    border: 1px solid v.$negro;
+    border-radius: 1rem;
+}
+.verde{
+    color: v.$verde;
+}
+.negro{
+    color: v.$negro;
+}
+.azul{
+    color: v.$azul;
 }
