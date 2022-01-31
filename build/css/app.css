@@ -20,10 +20,11 @@ h1 {
 
 h2 {
   font-size: 3.6rem;
+  margin: 1rem 0;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 img {
@@ -75,6 +76,23 @@ body {
 
 .border-top {
   border-top: 1rem solid #000;
+}
+
+.border-cards {
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+
+.verde {
+  color: #088c00;
+}
+
+.negro {
+  color: #000;
+}
+
+.azul {
+  color: #316dee;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -417,23 +435,112 @@ template {
 }
 
 .header {
-  background-image: url(../img/service.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 40rem;
+  background-color: #255a68;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .barra {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 5rem;
+  justify-content: space-between;
 }
-.barra .menu {
+
+.banner {
+  height: 40rem;
+  background-image: url(../img/metting.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.barra .menu li > a {
-  margin-right: 2rem;
+.banner h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.card .horarios,
+.card .ubicacion,
+.card .telefono,
+.card .online {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .horarios h3,
+.card .ubicacion h3,
+.card .telefono h3,
+.card .online h3 {
+  margin: 0;
+  margin: 1rem;
+}
+.card .horarios a,
+.card .ubicacion a,
+.card .telefono a,
+.card .online a {
+  color: #000;
+}
+.card .horarios p, .card .horarios li,
+.card .ubicacion p,
+.card .ubicacion li,
+.card .telefono p,
+.card .telefono li,
+.card .online p,
+.card .online li {
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.card .horarios i,
+.card .ubicacion i,
+.card .telefono i,
+.card .online i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+.card .number,
+.card .online {
+  margin: 0;
+  padding: 0;
+}
+.card .number li,
+.card .online li {
+  font-size: 1.8rem;
+}
+
+.logo_marca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo_marca img {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .logo_marca img {
+    width: 80%;
+  }
+}
+
+.footer {
+  height: 10rem;
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
