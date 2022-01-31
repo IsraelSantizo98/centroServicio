@@ -38,7 +38,8 @@
     .horarios,
     .ubicacion, 
     .telefono,
-    .online{
+    .online,
+    .orden{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,9 +47,6 @@
         h3{
             margin: 0;
             margin: 1rem;
-        }
-        a{
-            color: v.$negro;
         }
         p, li{
             margin: 0;
@@ -81,6 +79,15 @@
     @include m.tablet {
         img{
             width: 80%;
+        }
+    }
+}
+.orden{
+    .btn-primario{
+        margin: 2rem 0;
+        background-color: #006E90;
+        &:hover{
+            cursor: pointer;
         }
     }
 }

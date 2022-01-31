@@ -74,3 +74,15 @@ body{
 .azul{
     color: v.$azul;
 }
+.btn{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: v.$blanco;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
