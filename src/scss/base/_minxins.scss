@@ -18,6 +18,11 @@
         @content;
     }
 }
+@mixin desktopXLPlus{
+    @media (max-width: v.$desktopXL){
+        @content;
+    }
+}
 @mixin gridAutoFit ($espaciado){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
