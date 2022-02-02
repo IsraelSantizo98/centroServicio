@@ -1,5 +1,8 @@
 @use 'base/minxins' as m;
 @use 'base/variables' as v;
+body{
+    font-family: v.$fuente_principal;
+}
 .header{
     //background-color: rgba(0,0,0,0.6);
     background-color: #255a68;
