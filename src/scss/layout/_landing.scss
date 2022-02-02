@@ -22,6 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include m.desktop {
+        height: 50rem;
+    }
+    @include m.desktopXL {
+        height: 80vh;
+    }
     h2{
         color: white;
         background-color: rgba(0,0,0,0.6);
@@ -33,7 +39,9 @@
     @include m.gridAutoFit(2rem);
     padding: 2rem;
     @include m.tablet {
-        
+        .marca{
+            grid-column: 1 / 4;
+        }
     }
     .horarios,
     .ubicacion, 
@@ -76,9 +84,14 @@
         margin-bottom: 2rem;
         width: 50%;
     }
-    @include m.tablet {
+    @include m.desktop {
         img{
-            width: 80%;
+            width: 40%;
+        }
+    }
+    @include m.desktopXL {
+        img{
+            width: 30%;
         }
     }
 }
