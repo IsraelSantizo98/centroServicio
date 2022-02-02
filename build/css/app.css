@@ -471,6 +471,16 @@ template {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 992px) {
+  .banner {
+    height: 50rem;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 80vh;
+  }
+}
 .banner h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
@@ -483,6 +493,11 @@ template {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
   padding: 2rem;
+}
+@media (min-width: 768px) {
+  .card .marca {
+    grid-column: 1/4;
+  }
 }
 .card .horarios,
 .card .ubicacion,
@@ -543,9 +558,14 @@ template {
   margin-bottom: 2rem;
   width: 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .logo_marca img {
-    width: 80%;
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .logo_marca img {
+    width: 30%;
   }
 }
 
